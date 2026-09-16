@@ -1,0 +1,57 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: var(--panel-bg);
+  border-bottom: 2px solid var(--accent-cream);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent-espresso);
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.nav-item:hover {
+  color: var(--accent-latte);
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--accent-cream);
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: var(--accent-espresso);
+  font-weight: 700;
+}
+
+.cart-badge {
+  background-color: var(--danger-terracotta);
+  color: #ffffff;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 20px;
+}
