@@ -38,7 +38,7 @@ function App() {
   const totalItemsCount = cart.reduce((total, item) => total + item.quantity, 0);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ShoppingCard">
       <Navbar totalItems={totalItemsCount} />
       <Routes>
         <Route path="/" element={<Home />} />
